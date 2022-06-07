@@ -1,0 +1,13 @@
+{
+  "contracts": {
+    "ERC20": "bbde79eff088ecb87e6c3aacfa284f4fc0e6f17b",
+    "Market": "e8d31684ccf4d7495bbf826e5634eda6d81522aa",
+    "ReceiveEther": "039d0a1404d905240eb5d2ce2a3aa956b1b92f18",
+    "SendEther": "cbbde955b678a032099ab0211cd21f5d7a49ac5f",
+    "Storage": "c4e0b2a41a97dab8974e4c2d284eb175d2af77de",
+    "Transaction": "c13f991e8edcdc243699eb7d6fca917f499fb960",
+    "Upload": "7650162ab7298f6f65cf963b985cdb30e895ddb3"
+  },
+  "tests": {},
+  "tx": {}
+}

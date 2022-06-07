@@ -1,0 +1,1796 @@
+{
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "setter",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "value",
+          "type": "string"
+        }
+      ],
+      "name": "DataChange",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "name": "_x",
+          "type": "string"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [
+        {
+          "name": "_x",
+          "type": "string"
+        }
+      ],
+      "name": "set",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "reset",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "storedData",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "allSourcePaths": {
+    "0": "contracts/Upload.vy"
+  },
+  "ast": {
+    "ast_type": "Module",
+    "body": [
+      {
+        "ast_type": "EventDef",
+        "body": [
+          {
+            "annotation": {
+              "args": [
+                {
+                  "ast_type": "Name",
+                  "col_offset": 20,
+                  "end_col_offset": 27,
+                  "end_lineno": 4,
+                  "id": "address",
+                  "lineno": 4,
+                  "node_id": 8,
+                  "src": "57:7:0"
+                }
+              ],
+              "ast_type": "Call",
+              "col_offset": 12,
+              "end_col_offset": 28,
+              "end_lineno": 4,
+              "func": {
+                "ast_type": "Name",
+                "col_offset": 12,
+                "end_col_offset": 19,
+                "end_lineno": 4,
+                "id": "indexed",
+                "lineno": 4,
+                "node_id": 6,
+                "src": "49:7:0"
+              },
+              "keyword": null,
+              "keywords": [],
+              "lineno": 4,
+              "node_id": 5,
+              "src": "49:16:0"
+            },
+            "ast_type": "AnnAssign",
+            "col_offset": 4,
+            "end_col_offset": 28,
+            "end_lineno": 4,
+            "lineno": 4,
+            "node_id": 2,
+            "simple": 1,
+            "src": "41:24:0",
+            "target": {
+              "ast_type": "Name",
+              "col_offset": 4,
+              "end_col_offset": 10,
+              "end_lineno": 4,
+              "id": "setter",
+              "lineno": 4,
+              "node_id": 3,
+              "src": "41:6:0"
+            },
+            "value": null
+          },
+          {
+            "annotation": {
+              "ast_type": "Subscript",
+              "col_offset": 11,
+              "end_col_offset": 24,
+              "end_lineno": 5,
+              "lineno": 5,
+              "node_id": 13,
+              "slice": {
+                "ast_type": "Index",
+                "col_offset": 11,
+                "end_col_offset": 24,
+                "end_lineno": 5,
+                "lineno": 5,
+                "node_id": 18,
+                "src": "77:13:0",
+                "value": {
+                  "ast_type": "Int",
+                  "col_offset": 18,
+                  "end_col_offset": 23,
+                  "end_lineno": 5,
+                  "lineno": 5,
+                  "node_id": 16,
+                  "src": "84:5:0",
+                  "value": 10000
+                }
+              },
+              "src": "77:13:0",
+              "value": {
+                "ast_type": "Name",
+                "col_offset": 11,
+                "end_col_offset": 17,
+                "end_lineno": 5,
+                "id": "String",
+                "lineno": 5,
+                "node_id": 14,
+                "src": "77:6:0"
+              }
+            },
+            "ast_type": "AnnAssign",
+            "col_offset": 4,
+            "end_col_offset": 24,
+            "end_lineno": 5,
+            "lineno": 5,
+            "node_id": 10,
+            "simple": 1,
+            "src": "70:20:0",
+            "target": {
+              "ast_type": "Name",
+              "col_offset": 4,
+              "end_col_offset": 9,
+              "end_lineno": 5,
+              "id": "value",
+              "lineno": 5,
+              "node_id": 11,
+              "src": "70:5:0"
+            },
+            "value": null
+          }
+        ],
+        "col_offset": 0,
+        "end_col_offset": 24,
+        "end_lineno": 5,
+        "lineno": 3,
+        "name": "DataChange",
+        "node_id": 1,
+        "src": "19:71:0"
+      },
+      {
+        "annotation": {
+          "args": [
+            {
+              "ast_type": "Subscript",
+              "col_offset": 19,
+              "end_col_offset": 32,
+              "end_lineno": 7,
+              "lineno": 7,
+              "node_id": 25,
+              "slice": {
+                "ast_type": "Index",
+                "col_offset": 19,
+                "end_col_offset": 32,
+                "end_lineno": 7,
+                "lineno": 7,
+                "node_id": 30,
+                "src": "111:13:0",
+                "value": {
+                  "ast_type": "Int",
+                  "col_offset": 26,
+                  "end_col_offset": 31,
+                  "end_lineno": 7,
+                  "lineno": 7,
+                  "node_id": 28,
+                  "src": "118:5:0",
+                  "value": 10000
+                }
+              },
+              "src": "111:13:0",
+              "value": {
+                "ast_type": "Name",
+                "col_offset": 19,
+                "end_col_offset": 25,
+                "end_lineno": 7,
+                "id": "String",
+                "lineno": 7,
+                "node_id": 26,
+                "src": "111:6:0"
+              }
+            }
+          ],
+          "ast_type": "Call",
+          "col_offset": 12,
+          "end_col_offset": 33,
+          "end_lineno": 7,
+          "func": {
+            "ast_type": "Name",
+            "col_offset": 12,
+            "end_col_offset": 18,
+            "end_lineno": 7,
+            "id": "public",
+            "lineno": 7,
+            "node_id": 23,
+            "src": "104:6:0"
+          },
+          "keyword": null,
+          "keywords": [],
+          "lineno": 7,
+          "node_id": 22,
+          "src": "104:21:0"
+        },
+        "ast_type": "AnnAssign",
+        "col_offset": 0,
+        "end_col_offset": 33,
+        "end_lineno": 7,
+        "lineno": 7,
+        "node_id": 19,
+        "simple": 1,
+        "src": "92:33:0",
+        "target": {
+          "ast_type": "Name",
+          "col_offset": 0,
+          "end_col_offset": 10,
+          "end_lineno": 7,
+          "id": "storedData",
+          "lineno": 7,
+          "node_id": 20,
+          "src": "92:10:0"
+        },
+        "value": null
+      },
+      {
+        "args": {
+          "args": [
+            {
+              "annotation": {
+                "ast_type": "Subscript",
+                "col_offset": 17,
+                "end_col_offset": 30,
+                "end_lineno": 10,
+                "lineno": 10,
+                "node_id": 34,
+                "slice": {
+                  "ast_type": "Index",
+                  "col_offset": 17,
+                  "end_col_offset": 30,
+                  "end_lineno": 10,
+                  "lineno": 10,
+                  "node_id": 39,
+                  "src": "154:13:0",
+                  "value": {
+                    "ast_type": "Int",
+                    "col_offset": 24,
+                    "end_col_offset": 29,
+                    "end_lineno": 10,
+                    "lineno": 10,
+                    "node_id": 37,
+                    "src": "161:5:0",
+                    "value": 10000
+                  }
+                },
+                "src": "154:13:0",
+                "value": {
+                  "ast_type": "Name",
+                  "col_offset": 17,
+                  "end_col_offset": 23,
+                  "end_lineno": 10,
+                  "id": "String",
+                  "lineno": 10,
+                  "node_id": 35,
+                  "src": "154:6:0"
+                }
+              },
+              "arg": "_x",
+              "ast_type": "arg",
+              "col_offset": 13,
+              "end_col_offset": 30,
+              "end_lineno": 10,
+              "lineno": 10,
+              "node_id": 33,
+              "src": "150:17:0"
+            }
+          ],
+          "ast_type": "arguments",
+          "col_offset": 13,
+          "default": null,
+          "defaults": [],
+          "end_col_offset": 30,
+          "end_lineno": 10,
+          "lineno": 10,
+          "node_id": 32,
+          "src": "150:17:0"
+        },
+        "ast_type": "FunctionDef",
+        "body": [
+          {
+            "ast_type": "Assign",
+            "col_offset": 2,
+            "end_col_offset": 22,
+            "end_lineno": 11,
+            "lineno": 11,
+            "node_id": 40,
+            "src": "172:20:0",
+            "target": {
+              "ast_type": "Attribute",
+              "attr": "storedData",
+              "col_offset": 2,
+              "end_col_offset": 17,
+              "end_lineno": 11,
+              "lineno": 11,
+              "node_id": 41,
+              "src": "172:15:0",
+              "value": {
+                "ast_type": "Name",
+                "col_offset": 2,
+                "end_col_offset": 6,
+                "end_lineno": 11,
+                "id": "self",
+                "lineno": 11,
+                "node_id": 42,
+                "src": "172:4:0"
+              }
+            },
+            "value": {
+              "ast_type": "Name",
+              "col_offset": 20,
+              "end_col_offset": 22,
+              "end_lineno": 11,
+              "id": "_x",
+              "lineno": 11,
+              "node_id": 45,
+              "src": "190:2:0"
+            }
+          }
+        ],
+        "col_offset": 0,
+        "decorator_list": [
+          {
+            "ast_type": "Name",
+            "col_offset": 1,
+            "end_col_offset": 9,
+            "end_lineno": 9,
+            "id": "external",
+            "lineno": 9,
+            "node_id": 47,
+            "src": "128:8:0"
+          }
+        ],
+        "doc_string": null,
+        "end_col_offset": 22,
+        "end_lineno": 11,
+        "lineno": 10,
+        "name": "__init__",
+        "node_id": 31,
+        "pos": null,
+        "returns": null,
+        "src": "137:55:0"
+      },
+      {
+        "args": {
+          "args": [
+            {
+              "annotation": {
+                "ast_type": "Subscript",
+                "col_offset": 12,
+                "end_col_offset": 25,
+                "end_lineno": 14,
+                "lineno": 14,
+                "node_id": 52,
+                "slice": {
+                  "ast_type": "Index",
+                  "col_offset": 12,
+                  "end_col_offset": 25,
+                  "end_lineno": 14,
+                  "lineno": 14,
+                  "node_id": 57,
+                  "src": "216:13:0",
+                  "value": {
+                    "ast_type": "Int",
+                    "col_offset": 19,
+                    "end_col_offset": 24,
+                    "end_lineno": 14,
+                    "lineno": 14,
+                    "node_id": 55,
+                    "src": "223:5:0",
+                    "value": 10000
+                  }
+                },
+                "src": "216:13:0",
+                "value": {
+                  "ast_type": "Name",
+                  "col_offset": 12,
+                  "end_col_offset": 18,
+                  "end_lineno": 14,
+                  "id": "String",
+                  "lineno": 14,
+                  "node_id": 53,
+                  "src": "216:6:0"
+                }
+              },
+              "arg": "_x",
+              "ast_type": "arg",
+              "col_offset": 8,
+              "end_col_offset": 25,
+              "end_lineno": 14,
+              "lineno": 14,
+              "node_id": 51,
+              "src": "212:17:0"
+            }
+          ],
+          "ast_type": "arguments",
+          "col_offset": 8,
+          "default": null,
+          "defaults": [],
+          "end_col_offset": 25,
+          "end_lineno": 14,
+          "lineno": 14,
+          "node_id": 50,
+          "src": "212:17:0"
+        },
+        "ast_type": "FunctionDef",
+        "body": [
+          {
+            "ast_type": "Assign",
+            "col_offset": 2,
+            "end_col_offset": 22,
+            "end_lineno": 16,
+            "lineno": 16,
+            "node_id": 58,
+            "src": "314:20:0",
+            "target": {
+              "ast_type": "Attribute",
+              "attr": "storedData",
+              "col_offset": 2,
+              "end_col_offset": 17,
+              "end_lineno": 16,
+              "lineno": 16,
+              "node_id": 59,
+              "src": "314:15:0",
+              "value": {
+                "ast_type": "Name",
+                "col_offset": 2,
+                "end_col_offset": 6,
+                "end_lineno": 16,
+                "id": "self",
+                "lineno": 16,
+                "node_id": 60,
+                "src": "314:4:0"
+              }
+            },
+            "value": {
+              "ast_type": "Name",
+              "col_offset": 20,
+              "end_col_offset": 22,
+              "end_lineno": 16,
+              "id": "_x",
+              "lineno": 16,
+              "node_id": 63,
+              "src": "332:2:0"
+            }
+          },
+          {
+            "ast_type": "Log",
+            "col_offset": 2,
+            "end_col_offset": 32,
+            "end_lineno": 17,
+            "lineno": 17,
+            "node_id": 66,
+            "src": "337:30:0",
+            "value": {
+              "args": [
+                {
+                  "ast_type": "Attribute",
+                  "attr": "sender",
+                  "col_offset": 17,
+                  "end_col_offset": 27,
+                  "end_lineno": 17,
+                  "lineno": 17,
+                  "node_id": 70,
+                  "src": "352:10:0",
+                  "value": {
+                    "ast_type": "Name",
+                    "col_offset": 17,
+                    "end_col_offset": 20,
+                    "end_lineno": 17,
+                    "id": "msg",
+                    "lineno": 17,
+                    "node_id": 71,
+                    "src": "352:3:0"
+                  }
+                },
+                {
+                  "ast_type": "Name",
+                  "col_offset": 31,
+                  "end_col_offset": 32,
+                  "end_lineno": 17,
+                  "id": "_x",
+                  "lineno": 17,
+                  "node_id": 74,
+                  "src": "366:1:0"
+                }
+              ],
+              "ast_type": "Call",
+              "col_offset": 6,
+              "end_col_offset": 32,
+              "end_lineno": 17,
+              "func": {
+                "ast_type": "Name",
+                "col_offset": 6,
+                "end_col_offset": 16,
+                "end_lineno": 17,
+                "id": "DataChange",
+                "lineno": 17,
+                "node_id": 68,
+                "src": "341:10:0"
+              },
+              "keyword": null,
+              "keywords": [],
+              "lineno": 17,
+              "node_id": 67,
+              "src": "341:26:0"
+            }
+          }
+        ],
+        "col_offset": 0,
+        "decorator_list": [
+          {
+            "ast_type": "Name",
+            "col_offset": 1,
+            "end_col_offset": 9,
+            "end_lineno": 13,
+            "id": "external",
+            "lineno": 13,
+            "node_id": 76,
+            "src": "195:8:0"
+          }
+        ],
+        "doc_string": null,
+        "end_col_offset": 32,
+        "end_lineno": 17,
+        "lineno": 14,
+        "name": "set",
+        "node_id": 49,
+        "pos": null,
+        "returns": null,
+        "src": "204:163:0"
+      },
+      {
+        "args": {
+          "args": [],
+          "ast_type": "arguments",
+          "col_offset": 0,
+          "default": null,
+          "defaults": [],
+          "end_col_offset": 3,
+          "end_lineno": 20,
+          "lineno": 20,
+          "node_id": 79,
+          "src": "379:3:0"
+        },
+        "ast_type": "FunctionDef",
+        "body": [
+          {
+            "ast_type": "Assign",
+            "col_offset": 2,
+            "end_col_offset": 22,
+            "end_lineno": 21,
+            "lineno": 21,
+            "node_id": 80,
+            "src": "394:20:0",
+            "target": {
+              "ast_type": "Attribute",
+              "attr": "storedData",
+              "col_offset": 2,
+              "end_col_offset": 17,
+              "end_lineno": 21,
+              "lineno": 21,
+              "node_id": 81,
+              "src": "394:15:0",
+              "value": {
+                "ast_type": "Name",
+                "col_offset": 2,
+                "end_col_offset": 6,
+                "end_lineno": 21,
+                "id": "self",
+                "lineno": 21,
+                "node_id": 82,
+                "src": "394:4:0"
+              }
+            },
+            "value": {
+              "ast_type": "Str",
+              "col_offset": 20,
+              "end_col_offset": 22,
+              "end_lineno": 21,
+              "lineno": 21,
+              "node_id": 85,
+              "src": "412:2:0",
+              "value": ""
+            }
+          }
+        ],
+        "col_offset": 0,
+        "decorator_list": [
+          {
+            "ast_type": "Name",
+            "col_offset": 1,
+            "end_col_offset": 9,
+            "end_lineno": 19,
+            "id": "external",
+            "lineno": 19,
+            "node_id": 86,
+            "src": "370:8:0"
+          }
+        ],
+        "doc_string": null,
+        "end_col_offset": 22,
+        "end_lineno": 21,
+        "lineno": 20,
+        "name": "reset",
+        "node_id": 78,
+        "pos": null,
+        "returns": null,
+        "src": "379:35:0"
+      }
+    ],
+    "col_offset": 0,
+    "doc_string": null,
+    "end_col_offset": 22,
+    "end_lineno": 21,
+    "lineno": 1,
+    "name": "contracts/Upload.vy",
+    "node_id": 0,
+    "src": "0:414:0"
+  },
+  "bytecode": "0x6020610234600039600051612710602082610234016000396000511161022f57602081610234016000396000518060405260208201818161023401606039505050604051806000556000602082601f0104610139811161022f57801561007957905b60208102606001518160010155600101818118610061575b50505061019961009563000025e73961019960000163000025e7f3600436101561000d5761018e565b60003560e01c3461019457634ed3885e81186100f25760043560040161271081351161019457803580604052602082018181606037505050604051806000556000602082601f0104610139811161019457801561007e57905b60208102606001518160010155600101818118610066575b505050337f5c45f4d05305b783f13930a8b44e6b06cac3877a220cb4e7be1525e8f1d6e8d460208061278052806127800160405180825260208201818183606060045afa90505050805180602083010181600003601f163682375050601f19601f82516020010116905081019050612780a2005b63d826f88f811861010e57600060405260408051806000555050005b632a1afcd9811861018c5760208060405280604001600054808252602082016000602083601f0104610139811161019457801561015e57905b806001015460208202840152600101818118610147575b50505050805180602083010181600003601f163682375050601f19601f825160200101169050810190506040f35b505b60006000fd5b600080fd005b600080fd",
+  "bytecodeSha1": "d4ae23074ec9ad3b76fc2391229ef4743c9027f8",
+  "compiler": {
+    "evm_version": "istanbul",
+    "version": "0.3.3"
+  },
+  "contractName": "Upload",
+  "coverageMap": {
+    "branches": {
+      "0": {}
+    },
+    "statements": {
+      "0": {
+        "Upload.reset": {
+          "2": [
+            394,
+            414
+          ]
+        },
+        "Upload.set": {
+          "0": [
+            314,
+            334
+          ],
+          "1": [
+            337,
+            367
+          ]
+        }
+      }
+    }
+  },
+  "dependencies": [],
+  "deployedBytecode": "0x600436101561000d5761018e565b60003560e01c3461019457634ed3885e81186100f25760043560040161271081351161019457803580604052602082018181606037505050604051806000556000602082601f0104610139811161019457801561007e57905b60208102606001518160010155600101818118610066575b505050337f5c45f4d05305b783f13930a8b44e6b06cac3877a220cb4e7be1525e8f1d6e8d460208061278052806127800160405180825260208201818183606060045afa90505050805180602083010181600003601f163682375050601f19601f82516020010116905081019050612780a2005b63d826f88f811861010e57600060405260408051806000555050005b632a1afcd9811861018c5760208060405280604001600054808252602082016000602083601f0104610139811161019457801561015e57905b806001015460208202840152600101818118610147575b50505050805180602083010181600003601f163682375050601f19601f825160200101169050810190506040f35b505b60006000fd5b600080fd",
+  "deployedSourceMap": "-1:-1:0:-;;;;;:::-;;:::-;:::-;;;;;;;:::-;;;;204:163;:::-;-1:-1;;;212:17;-1:-1;;;;;:::-;;;;;;;;;;;;;;;212:17;332:2;314:20;-1:-1;314:15;-1:-1;;;;;;;;;;;:::-;;;;:::-;;:::-;;;;;;;;;;;;;;;;;:::-;:::-;;;314:20;352:10;337:30;-1:-1;;;;;;;366:1;-1:-1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;337:30;;-1:-1;204:163::-;-1:-1;;;379:35;:::-;-1:-1;;412:2;;-1:-1;;;394:15;-1:-1;394:20;;-1:-1;379:35::-;-1:-1;;;104:21;:::-;-1:-1;;;;;;;;;;;;;;;;;;;;;;;;;:::-;;;;:::-;;:::-;;;;;;;;;;;;;;;;;:::-;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;104:21;-1:-1;104:21::-;-1:-1;:::-;;;;:::-;;;;",
+  "language": "Vyper",
+  "natspec": {
+    "methods": {}
+  },
+  "offset": [
+    0,
+    414
+  ],
+  "opcodes": "PUSH1 0x4 CALLDATASIZE LT ISZERO PUSH2 0x0D JUMPI PUSH2 0x18E JUMP JUMPDEST PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR CALLVALUE PUSH2 0x194 JUMPI PUSH4 0x4ED3885E DUP2 XOR PUSH2 0x0F2 JUMPI PUSH1 0x4 CALLDATALOAD PUSH1 0x4 ADD PUSH2 0x2710 DUP2 CALLDATALOAD GT PUSH2 0x194 JUMPI DUP1 CALLDATALOAD DUP1 PUSH1 0x40 MSTORE PUSH1 0x20 DUP3 ADD DUP2 DUP2 PUSH1 0x60 CALLDATACOPY POP POP POP PUSH1 0x40 MLOAD DUP1 PUSH1 0x0 SSTORE PUSH1 0x0 PUSH1 0x20 DUP3 PUSH1 0x1F ADD DIV PUSH2 0x139 DUP2 GT PUSH2 0x194 JUMPI DUP1 ISZERO PUSH2 0x07E JUMPI SWAP1 JUMPDEST PUSH1 0x20 DUP2 MUL PUSH1 0x60 ADD MLOAD DUP2 PUSH1 0x1 ADD SSTORE PUSH1 0x1 ADD DUP2 DUP2 XOR PUSH2 0x066 JUMPI JUMPDEST POP POP POP CALLER PUSH32 0x5C45F4D0535B783F13930A8B44E6B6CAC3877A22CB4E7BE1525E8F1D6E8D4 PUSH1 0x20 DUP1 PUSH2 0x2780 MSTORE DUP1 PUSH2 0x2780 ADD PUSH1 0x40 MLOAD DUP1 DUP3 MSTORE PUSH1 0x20 DUP3 ADD DUP2 DUP2 DUP4 PUSH1 0x60 PUSH1 0x4 GAS STATICCALL SWAP1 POP POP POP DUP1 MLOAD DUP1 PUSH1 0x20 DUP4 ADD ADD DUP2 PUSH1 0x0 SUB PUSH1 0x1F AND CALLDATASIZE DUP3 CALLDATACOPY POP POP PUSH1 0x1F NOT PUSH1 0x1F DUP3 MLOAD PUSH1 0x20 ADD ADD AND SWAP1 POP DUP2 ADD SWAP1 POP PUSH2 0x2780 LOG2 STOP JUMPDEST PUSH4 0xD826F88F DUP2 XOR PUSH2 0x1E JUMPI PUSH1 0x0 PUSH1 0x40 MSTORE PUSH1 0x40 DUP1 MLOAD DUP1 PUSH1 0x0 SSTORE POP POP STOP JUMPDEST PUSH4 0x2A1AFCD9 DUP2 XOR PUSH2 0x18C JUMPI PUSH1 0x20 DUP1 PUSH1 0x40 MSTORE DUP1 PUSH1 0x40 ADD PUSH1 0x0 SLOAD DUP1 DUP3 MSTORE PUSH1 0x20 DUP3 ADD PUSH1 0x0 PUSH1 0x20 DUP4 PUSH1 0x1F ADD DIV PUSH2 0x139 DUP2 GT PUSH2 0x194 JUMPI DUP1 ISZERO PUSH2 0x15E JUMPI SWAP1 JUMPDEST DUP1 PUSH1 0x1 ADD SLOAD PUSH1 0x20 DUP3 MUL DUP5 ADD MSTORE PUSH1 0x1 ADD DUP2 DUP2 XOR PUSH2 0x147 JUMPI JUMPDEST POP POP POP POP DUP1 MLOAD DUP1 PUSH1 0x20 DUP4 ADD ADD DUP2 PUSH1 0x0 SUB PUSH1 0x1F AND CALLDATASIZE DUP3 CALLDATACOPY POP POP PUSH1 0x1F NOT PUSH1 0x1F DUP3 MLOAD PUSH1 0x20 ADD ADD AND SWAP1 POP DUP2 ADD SWAP1 POP PUSH1 0x40 RETURN JUMPDEST POP JUMPDEST PUSH1 0x0 PUSH1 0x0 REVERT JUMPDEST PUSH1 0x0 DUP1 REVERT",
+  "pcMap": {
+    "0": {
+      "offset": [
+        0,
+        414
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x4"
+    },
+    "2": {
+      "op": "CALLDATASIZE"
+    },
+    "3": {
+      "op": "LT"
+    },
+    "4": {
+      "op": "ISZERO"
+    },
+    "5": {
+      "op": "PUSH2",
+      "value": "0x0D"
+    },
+    "8": {
+      "op": "JUMPI"
+    },
+    "9": {
+      "op": "PUSH2",
+      "value": "0x18E"
+    },
+    "12": {
+      "op": "JUMP"
+    },
+    "13": {
+      "op": "JUMPDEST"
+    },
+    "14": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "16": {
+      "op": "CALLDATALOAD"
+    },
+    "17": {
+      "op": "PUSH1",
+      "value": "0xE0"
+    },
+    "19": {
+      "op": "SHR"
+    },
+    "20": {
+      "op": "CALLVALUE"
+    },
+    "21": {
+      "op": "PUSH2",
+      "value": "0x194"
+    },
+    "24": {
+      "dev": "Cannot send ether to nonpayable function",
+      "offset": [
+        0,
+        0
+      ],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "25": {
+      "op": "PUSH4",
+      "value": "0x4ED3885E"
+    },
+    "30": {
+      "op": "DUP2"
+    },
+    "31": {
+      "op": "XOR"
+    },
+    "32": {
+      "fn": "Upload.set",
+      "offset": [
+        204,
+        367
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x0F2"
+    },
+    "35": {
+      "fn": "Upload.set",
+      "offset": [
+        204,
+        367
+      ],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "36": {
+      "op": "PUSH1",
+      "value": "0x4"
+    },
+    "38": {
+      "op": "CALLDATALOAD"
+    },
+    "39": {
+      "op": "PUSH1",
+      "value": "0x4"
+    },
+    "41": {
+      "fn": "Upload.set",
+      "offset": [
+        212,
+        229
+      ],
+      "op": "ADD",
+      "path": "0"
+    },
+    "42": {
+      "op": "PUSH2",
+      "value": "0x2710"
+    },
+    "45": {
+      "op": "DUP2"
+    },
+    "46": {
+      "op": "CALLDATALOAD"
+    },
+    "47": {
+      "op": "GT"
+    },
+    "48": {
+      "op": "PUSH2",
+      "value": "0x194"
+    },
+    "51": {
+      "op": "JUMPI"
+    },
+    "52": {
+      "op": "DUP1"
+    },
+    "53": {
+      "op": "CALLDATALOAD"
+    },
+    "54": {
+      "op": "DUP1"
+    },
+    "55": {
+      "op": "PUSH1",
+      "value": "0x40"
+    },
+    "57": {
+      "op": "MSTORE"
+    },
+    "58": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "60": {
+      "op": "DUP3"
+    },
+    "61": {
+      "op": "ADD"
+    },
+    "62": {
+      "op": "DUP2"
+    },
+    "63": {
+      "op": "DUP2"
+    },
+    "64": {
+      "op": "PUSH1",
+      "value": "0x60"
+    },
+    "66": {
+      "op": "CALLDATACOPY"
+    },
+    "67": {
+      "op": "POP"
+    },
+    "68": {
+      "op": "POP"
+    },
+    "69": {
+      "fn": "Upload.set",
+      "offset": [
+        212,
+        229
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "70": {
+      "fn": "Upload.set",
+      "offset": [
+        332,
+        334
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "statement": 0,
+      "value": "0x40"
+    },
+    "72": {
+      "fn": "Upload.set",
+      "offset": [
+        314,
+        334
+      ],
+      "op": "MLOAD",
+      "path": "0"
+    },
+    "73": {
+      "op": "DUP1"
+    },
+    "74": {
+      "fn": "Upload.set",
+      "offset": [
+        314,
+        329
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x0"
+    },
+    "76": {
+      "op": "SSTORE"
+    },
+    "77": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "79": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "81": {
+      "op": "DUP3"
+    },
+    "82": {
+      "op": "PUSH1",
+      "value": "0x1F"
+    },
+    "84": {
+      "op": "ADD"
+    },
+    "85": {
+      "op": "DIV"
+    },
+    "86": {
+      "op": "PUSH2",
+      "value": "0x139"
+    },
+    "89": {
+      "op": "DUP2"
+    },
+    "90": {
+      "op": "GT"
+    },
+    "91": {
+      "op": "PUSH2",
+      "value": "0x194"
+    },
+    "94": {
+      "op": "JUMPI"
+    },
+    "95": {
+      "op": "DUP1"
+    },
+    "96": {
+      "op": "ISZERO"
+    },
+    "97": {
+      "op": "PUSH2",
+      "value": "0x07E"
+    },
+    "100": {
+      "op": "JUMPI"
+    },
+    "101": {
+      "op": "SWAP1"
+    },
+    "102": {
+      "op": "JUMPDEST"
+    },
+    "103": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "105": {
+      "op": "DUP2"
+    },
+    "106": {
+      "op": "MUL"
+    },
+    "107": {
+      "op": "PUSH1",
+      "value": "0x60"
+    },
+    "109": {
+      "op": "ADD"
+    },
+    "110": {
+      "op": "MLOAD"
+    },
+    "111": {
+      "op": "DUP2"
+    },
+    "112": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "114": {
+      "op": "ADD"
+    },
+    "115": {
+      "op": "SSTORE"
+    },
+    "116": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "118": {
+      "op": "ADD"
+    },
+    "119": {
+      "op": "DUP2"
+    },
+    "120": {
+      "op": "DUP2"
+    },
+    "121": {
+      "op": "XOR"
+    },
+    "122": {
+      "op": "PUSH2",
+      "value": "0x066"
+    },
+    "125": {
+      "op": "JUMPI"
+    },
+    "126": {
+      "op": "JUMPDEST"
+    },
+    "127": {
+      "op": "POP"
+    },
+    "128": {
+      "op": "POP"
+    },
+    "129": {
+      "fn": "Upload.set",
+      "offset": [
+        314,
+        334
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "130": {
+      "fn": "Upload.set",
+      "offset": [
+        352,
+        362
+      ],
+      "op": "CALLER",
+      "path": "0",
+      "statement": 1
+    },
+    "131": {
+      "fn": "Upload.set",
+      "offset": [
+        337,
+        367
+      ],
+      "op": "PUSH32",
+      "path": "0",
+      "value": "0x5C45F4D0535B783F13930A8B44E6B6CAC3877A22CB4E7BE1525E8F1D6E8D4"
+    },
+    "164": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "166": {
+      "op": "DUP1"
+    },
+    "167": {
+      "op": "PUSH2",
+      "value": "0x2780"
+    },
+    "170": {
+      "op": "MSTORE"
+    },
+    "171": {
+      "op": "DUP1"
+    },
+    "172": {
+      "op": "PUSH2",
+      "value": "0x2780"
+    },
+    "175": {
+      "op": "ADD"
+    },
+    "176": {
+      "fn": "Upload.set",
+      "offset": [
+        366,
+        367
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x40"
+    },
+    "178": {
+      "op": "MLOAD"
+    },
+    "179": {
+      "op": "DUP1"
+    },
+    "180": {
+      "op": "DUP3"
+    },
+    "181": {
+      "op": "MSTORE"
+    },
+    "182": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "184": {
+      "op": "DUP3"
+    },
+    "185": {
+      "op": "ADD"
+    },
+    "186": {
+      "op": "DUP2"
+    },
+    "187": {
+      "op": "DUP2"
+    },
+    "188": {
+      "op": "DUP4"
+    },
+    "189": {
+      "op": "PUSH1",
+      "value": "0x60"
+    },
+    "191": {
+      "op": "PUSH1",
+      "value": "0x4"
+    },
+    "193": {
+      "op": "GAS"
+    },
+    "194": {
+      "op": "STATICCALL"
+    },
+    "195": {
+      "op": "SWAP1"
+    },
+    "196": {
+      "op": "POP"
+    },
+    "197": {
+      "op": "POP"
+    },
+    "198": {
+      "op": "POP"
+    },
+    "199": {
+      "op": "DUP1"
+    },
+    "200": {
+      "op": "MLOAD"
+    },
+    "201": {
+      "op": "DUP1"
+    },
+    "202": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "204": {
+      "op": "DUP4"
+    },
+    "205": {
+      "op": "ADD"
+    },
+    "206": {
+      "op": "ADD"
+    },
+    "207": {
+      "op": "DUP2"
+    },
+    "208": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "210": {
+      "op": "SUB"
+    },
+    "211": {
+      "op": "PUSH1",
+      "value": "0x1F"
+    },
+    "213": {
+      "op": "AND"
+    },
+    "214": {
+      "op": "CALLDATASIZE"
+    },
+    "215": {
+      "op": "DUP3"
+    },
+    "216": {
+      "op": "CALLDATACOPY"
+    },
+    "217": {
+      "op": "POP"
+    },
+    "218": {
+      "op": "POP"
+    },
+    "219": {
+      "op": "PUSH1",
+      "value": "0x1F"
+    },
+    "221": {
+      "op": "NOT"
+    },
+    "222": {
+      "op": "PUSH1",
+      "value": "0x1F"
+    },
+    "224": {
+      "op": "DUP3"
+    },
+    "225": {
+      "op": "MLOAD"
+    },
+    "226": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "228": {
+      "op": "ADD"
+    },
+    "229": {
+      "op": "ADD"
+    },
+    "230": {
+      "op": "AND"
+    },
+    "231": {
+      "op": "SWAP1"
+    },
+    "232": {
+      "op": "POP"
+    },
+    "233": {
+      "op": "DUP2"
+    },
+    "234": {
+      "op": "ADD"
+    },
+    "235": {
+      "op": "SWAP1"
+    },
+    "236": {
+      "op": "POP"
+    },
+    "237": {
+      "fn": "Upload.set",
+      "offset": [
+        337,
+        367
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x2780"
+    },
+    "240": {
+      "fn": "Upload.set",
+      "offset": [
+        337,
+        367
+      ],
+      "op": "LOG2",
+      "path": "0"
+    },
+    "241": {
+      "op": "STOP"
+    },
+    "242": {
+      "fn": "Upload.set",
+      "offset": [
+        204,
+        367
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "243": {
+      "op": "PUSH4",
+      "value": "0xD826F88F"
+    },
+    "248": {
+      "op": "DUP2"
+    },
+    "249": {
+      "op": "XOR"
+    },
+    "250": {
+      "fn": "Upload.reset",
+      "offset": [
+        379,
+        414
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x1E"
+    },
+    "253": {
+      "fn": "Upload.reset",
+      "offset": [
+        379,
+        414
+      ],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "254": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "256": {
+      "op": "PUSH1",
+      "value": "0x40"
+    },
+    "258": {
+      "fn": "Upload.reset",
+      "offset": [
+        412,
+        414
+      ],
+      "op": "MSTORE",
+      "path": "0",
+      "statement": 2
+    },
+    "259": {
+      "fn": "Upload.reset",
+      "offset": [
+        412,
+        414
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x40"
+    },
+    "261": {
+      "op": "DUP1"
+    },
+    "262": {
+      "op": "MLOAD"
+    },
+    "263": {
+      "op": "DUP1"
+    },
+    "264": {
+      "fn": "Upload.reset",
+      "offset": [
+        394,
+        409
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x0"
+    },
+    "266": {
+      "op": "SSTORE"
+    },
+    "267": {
+      "fn": "Upload.reset",
+      "offset": [
+        394,
+        414
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "268": {
+      "fn": "Upload.reset",
+      "offset": [
+        394,
+        414
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "269": {
+      "op": "STOP"
+    },
+    "270": {
+      "fn": "Upload.reset",
+      "offset": [
+        379,
+        414
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "271": {
+      "op": "PUSH4",
+      "value": "0x2A1AFCD9"
+    },
+    "276": {
+      "op": "DUP2"
+    },
+    "277": {
+      "op": "XOR"
+    },
+    "278": {
+      "offset": [
+        104,
+        125
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x18C"
+    },
+    "281": {
+      "offset": [
+        104,
+        125
+      ],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "282": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "284": {
+      "op": "DUP1"
+    },
+    "285": {
+      "op": "PUSH1",
+      "value": "0x40"
+    },
+    "287": {
+      "op": "MSTORE"
+    },
+    "288": {
+      "op": "DUP1"
+    },
+    "289": {
+      "op": "PUSH1",
+      "value": "0x40"
+    },
+    "291": {
+      "op": "ADD"
+    },
+    "292": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "294": {
+      "op": "SLOAD"
+    },
+    "295": {
+      "op": "DUP1"
+    },
+    "296": {
+      "op": "DUP3"
+    },
+    "297": {
+      "op": "MSTORE"
+    },
+    "298": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "300": {
+      "op": "DUP3"
+    },
+    "301": {
+      "op": "ADD"
+    },
+    "302": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "304": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "306": {
+      "op": "DUP4"
+    },
+    "307": {
+      "op": "PUSH1",
+      "value": "0x1F"
+    },
+    "309": {
+      "op": "ADD"
+    },
+    "310": {
+      "op": "DIV"
+    },
+    "311": {
+      "op": "PUSH2",
+      "value": "0x139"
+    },
+    "314": {
+      "op": "DUP2"
+    },
+    "315": {
+      "op": "GT"
+    },
+    "316": {
+      "op": "PUSH2",
+      "value": "0x194"
+    },
+    "319": {
+      "op": "JUMPI"
+    },
+    "320": {
+      "op": "DUP1"
+    },
+    "321": {
+      "op": "ISZERO"
+    },
+    "322": {
+      "op": "PUSH2",
+      "value": "0x15E"
+    },
+    "325": {
+      "op": "JUMPI"
+    },
+    "326": {
+      "op": "SWAP1"
+    },
+    "327": {
+      "op": "JUMPDEST"
+    },
+    "328": {
+      "op": "DUP1"
+    },
+    "329": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "331": {
+      "op": "ADD"
+    },
+    "332": {
+      "op": "SLOAD"
+    },
+    "333": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "335": {
+      "op": "DUP3"
+    },
+    "336": {
+      "op": "MUL"
+    },
+    "337": {
+      "op": "DUP5"
+    },
+    "338": {
+      "op": "ADD"
+    },
+    "339": {
+      "op": "MSTORE"
+    },
+    "340": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "342": {
+      "op": "ADD"
+    },
+    "343": {
+      "op": "DUP2"
+    },
+    "344": {
+      "op": "DUP2"
+    },
+    "345": {
+      "op": "XOR"
+    },
+    "346": {
+      "op": "PUSH2",
+      "value": "0x147"
+    },
+    "349": {
+      "op": "JUMPI"
+    },
+    "350": {
+      "op": "JUMPDEST"
+    },
+    "351": {
+      "op": "POP"
+    },
+    "352": {
+      "op": "POP"
+    },
+    "353": {
+      "op": "POP"
+    },
+    "354": {
+      "op": "POP"
+    },
+    "355": {
+      "op": "DUP1"
+    },
+    "356": {
+      "op": "MLOAD"
+    },
+    "357": {
+      "op": "DUP1"
+    },
+    "358": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "360": {
+      "op": "DUP4"
+    },
+    "361": {
+      "op": "ADD"
+    },
+    "362": {
+      "op": "ADD"
+    },
+    "363": {
+      "op": "DUP2"
+    },
+    "364": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "366": {
+      "op": "SUB"
+    },
+    "367": {
+      "op": "PUSH1",
+      "value": "0x1F"
+    },
+    "369": {
+      "op": "AND"
+    },
+    "370": {
+      "op": "CALLDATASIZE"
+    },
+    "371": {
+      "op": "DUP3"
+    },
+    "372": {
+      "op": "CALLDATACOPY"
+    },
+    "373": {
+      "op": "POP"
+    },
+    "374": {
+      "op": "POP"
+    },
+    "375": {
+      "op": "PUSH1",
+      "value": "0x1F"
+    },
+    "377": {
+      "op": "NOT"
+    },
+    "378": {
+      "op": "PUSH1",
+      "value": "0x1F"
+    },
+    "380": {
+      "op": "DUP3"
+    },
+    "381": {
+      "op": "MLOAD"
+    },
+    "382": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "384": {
+      "op": "ADD"
+    },
+    "385": {
+      "op": "ADD"
+    },
+    "386": {
+      "op": "AND"
+    },
+    "387": {
+      "op": "SWAP1"
+    },
+    "388": {
+      "op": "POP"
+    },
+    "389": {
+      "op": "DUP2"
+    },
+    "390": {
+      "op": "ADD"
+    },
+    "391": {
+      "op": "SWAP1"
+    },
+    "392": {
+      "op": "POP"
+    },
+    "393": {
+      "offset": [
+        104,
+        125
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x40"
+    },
+    "395": {
+      "op": "RETURN"
+    },
+    "396": {
+      "offset": [
+        104,
+        125
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "397": {
+      "op": "POP"
+    },
+    "398": {
+      "op": "JUMPDEST"
+    },
+    "399": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "401": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "403": {
+      "op": "REVERT"
+    },
+    "404": {
+      "op": "JUMPDEST"
+    },
+    "405": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "407": {
+      "op": "DUP1"
+    },
+    "408": {
+      "op": "REVERT",
+      "optimizer_revert": true
+    }
+  },
+  "sha1": "18eda294ca4914ebcb9601e6b2a6c185e0ee7334",
+  "source": "# @version ^0.3.0\n\nevent DataChange:\n    setter: indexed(address)\n    value: String[10000]\n\nstoredData: public(String[10000])\n\n@external\ndef __init__(_x: String[10000]):\n  self.storedData = _x\n\n@external\ndef set(_x: String[10000]):\n  #assert self.storedData < 100, \"Storage is locked when 100 or more is stored\"\n  self.storedData = _x\n  log DataChange(msg.sender, _x)\n\n@external\ndef reset():\n  self.storedData = \"\"",
+  "sourceMap": "",
+  "sourcePath": "contracts/Upload.vy",
+  "type": "contract"
+}
